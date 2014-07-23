@@ -1,0 +1,5 @@
+name = Google Analytics Trakc Copy/Paste Shares
+project = ga_copy_shares
+dependencies[] = googleanalytics
+package = Analytics
+core = 7.x

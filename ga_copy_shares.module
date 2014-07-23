@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements template_preprocess_page
+ */
+
+function ga_copy_shares_preprocess_page(&$vars) {
+  if (module_exists('googleanalytics') && arg(0) != 'admin') {
+    drupal_add_js(drupal_get_path('module', 'ga_copy_shares') . '/js/ga_copy_shares.js', 'file');
+  }
+}
